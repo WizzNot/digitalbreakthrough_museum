@@ -1,0 +1,2 @@
+neuro/src/data.feather filter=lfs diff=lfs merge=lfs -text
+neuro/src/mnist-dense_second.hdf5 filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Информация о вашем изображении: {% endblock %}
+{% block content%}
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <div class="card mt-3">
+        <img src="{% static most_similar_path %}" class="card-img-top" alt="Название объекта">
+        <div class="card-body">
+          <h5 class="card-title">{{ most_similar_name }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col">
+      <h1>Данные о вашем изображении</h1>
+      <p>Категория: {{ category }}</p>
+    </div>
+  </div>
+  <div class="row mt-5">
+    {% for item in items %}
+    <div class="col-4">
+      {% include 'includes/object.html' with path=item.path name=item.name %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
