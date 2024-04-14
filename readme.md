@@ -6,7 +6,7 @@
 
 **Data downloading:**
 
-- download archive (path: path)
+- download archive (path: [path](https://drive.google.com/file/d/1VRyWJA_NMuW89EEp-WMx4Rp_poC2h2oK/view?usp=sharing))
 - unzip it in neuro/src (make sure the folder with the images is called train!!!)
 
 **Install module for venv-creating:**\
