@@ -2,6 +2,13 @@
 
 *If you use windows, please set \ instead of / in the paths*
 
+**!!!For the server to work correctly, you need to download an archive with pictures that are necessary for the model to work correctly. Otherwise, exhibits will be displayed without an image, only with a text description.!!!**
+
+**Data downloading:**
+
+- download archive (path: path)
+- unzip it in neuro/src (make sure the folder with the images is called train!!!)
+
 **Install module for venv-creating:**\
 pip install venv
 

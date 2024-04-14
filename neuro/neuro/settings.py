@@ -138,3 +138,6 @@ GROUPS = ['Археология', 'Оружие', 'Прочие', 'Нумизм�
 DF = pd.read_feather(os.path.join(STATIC_SRC, "data.feather"))
 CSV_DF = pd.read_csv(os.path.join(STATIC_SRC, "train.csv"), delimiter=";")
 FEATURE_VECTORS = DF.drop("group", axis=1).drop("id", axis=1).to_numpy()
+
+if not os.path.exists(os.path.join(STATIC_SRC, "train")):
+    print("!!!Image folder doesn't exist. Please read README file.!!!")
